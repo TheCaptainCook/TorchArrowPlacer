@@ -18,31 +18,26 @@ public class torchArrowGiveCommand implements CommandExecutor {
         Player player = (Player) sender;
         Inventory playerInventory = player.getInventory();
         GameMode playerGameMode = player.getGameMode();
-
         if (sender instanceof Player) {
-
-            if (playerGameMode ==GameMode.CREATIVE)
-            {
+            if (playerGameMode == GameMode.CREATIVE) {
                 if (args.length == 0) {
                     player.sendMessage("You must specify a command!");
                     return false;
-                }
-                else if (args[0].equalsIgnoreCase("atc")) {
+                } else if (args[0].equalsIgnoreCase("ta")) {
                     player.sendMessage("You have been given a Torch Arrow!");
                     playerInventory.addItem(recipe.craftArrowTorch());
                     return true;
-                }
-                else {
+                } else {
                     player.sendMessage("Invalid command!");
                     return false;
                 }
+            } else {
+                player.sendMessage("You must be in Creative Mode to use this command!");
+                return false;
             }
-
-        }
-        else {
+        } else {
             sender.sendMessage("You must be a player to use this command!");
-            return false;
+            return true;
         }
-        return true;
     }
 }

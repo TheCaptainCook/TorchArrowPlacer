@@ -6,3 +6,10 @@ prefix: TPA -
 authors: [ The Captain Cook ]
 description: Torch Placer Description
 website: https://github.com/thecaptaincook
+
+commands:
+  ta:
+    description: Torch Arrow Placer Command
+    usage: /ta
+    #permission: torcharrowplacer.use
+    aliases: [tap, torcharrowplacer, torchArrowPlacer]
