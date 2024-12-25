@@ -1,0 +1,8 @@
+name: TorchArrowPlacer
+version: '1.0'
+main: github.com.thecaptaincook.torchArrowPlacer.TorchArrowPlacer
+api-version: '1.21'
+prefix: TPA -
+authors: [ The Captain Cook ]
+description: Torch Placer Description
+website: https://github.com/thecaptaincook
