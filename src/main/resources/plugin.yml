@@ -8,8 +8,6 @@ description: Torch Placer Description
 website: https://github.com/thecaptaincook
 
 commands:
-  ta:
+  tap:
     description: Torch Arrow Placer Command
-    usage: /ta
-    #permission: torcharrowplacer.use
-    aliases: [tap, torcharrowplacer, torchArrowPlacer]
+    usage: use /<command> to give a player a torch arrow
