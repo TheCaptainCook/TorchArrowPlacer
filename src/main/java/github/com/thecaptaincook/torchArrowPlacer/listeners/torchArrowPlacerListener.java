@@ -34,7 +34,7 @@ public class torchArrowPlacerListener implements Listener {
 */
 
         if (block == null) {
-            player.sendMessage("You missed the block!");
+            player.sendMessage("You missed the block!"); // Block Miss
         }
         else {
             player.sendMessage("Entity: " + arrow);
